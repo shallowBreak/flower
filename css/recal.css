@@ -1,0 +1,122 @@
+.shopleft{
+    display: none;
+}
+.navvleft:hover .shopleft{
+    display: block;
+}
+.center{
+    width: 1200px;
+    margin: 0 auto;
+}
+.center1{
+    width: 100%;
+    height: 400px;
+    background: #ddd;
+    margin: 20px 0; 
+}
+.imgs{
+    float: left;
+    width: 400px;
+    height: 350px;
+    margin-top: 25px;
+}
+.imgs img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin-left: 25px;
+}
+.titit{
+    float: left;
+    width: 750px;
+    height: 350px;
+    margin-top: 25px;
+    background: #fff;
+    padding-left:30px 
+}
+.titit a{
+    display: block;
+    width: 300px;
+    font-size: 16px;
+    color: chocolate;
+    margin: 10px;
+   
+}
+.t1{
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.t2{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+}
+#btn span{
+    border:none;
+    background: url(https://img02.hua.com/pc/assets/img/common_z.png) no-repeat;
+    background-position:-306px -284px; 
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+}
+#btn{
+    margin-left:400px; 
+    width: 200px;
+    height: 45px;
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+}
+.shp{
+    position: fixed;
+    top: 50%;
+    right:0 ;
+    width: 90px;
+    height: 45px;
+    background: #ff6600
+}
+#obtn{
+    border: none;
+    background: #ff6600;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    position: relative; 
+    text-align: center;
+    line-height: 42px;
+    width: 100%;
+    padding-left:25px 
+}
+.sh1{
+    border:none;
+    background: url(https://img02.hua.com/pc/assets/img/common_z.png) no-repeat;
+    background-position:-306px -284px; 
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    z-index: 10;
+}
+#sp{
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    color: red;
+    right: 4px;
+    top: 4px;
+    z-index: 20;
+    border-radius: 50%;
+    line-height: 12px;
+    text-align: center
+}

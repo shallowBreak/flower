@@ -1,0 +1,129 @@
+.center{
+    height: 488px;
+    background: #ffd7c4 url(https://img02.hua.com/pc/assets/img/login_bg.jpg) 50% 0 no-repeat;
+}
+.centerbox{
+    margin:0 auto;
+    width: 990px;
+    overflow: hidden;
+}
+.register{
+    background: #fff;
+    width: 420px;
+    height: 408px;
+    margin-top: 40px;
+    margin-left: 570px;
+    padding: 20px;
+}
+.reg{
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+    padding: 0;
+    list-style: none;
+    border-bottom: 2px solid #d9d9d9;
+}
+.reg a{
+    display: inline-block;
+    width: 102px;
+    height: 42px;
+    color: #737373;
+    text-align: center;
+    line-height: 42px;
+}
+.reg a:first-child{
+    position: relative;
+    color: #ff6a00
+}
+.reg a:hover{
+    color: #ff6a00;
+}
+.reg a span{
+    position: absolute;
+    display: block;
+    border-bottom: solid 2px #ff6a00;
+    width: 100%;
+    bottom: -2px;
+}
+.register p{
+    height: 44px;
+    width: 100%;
+    line-height: 44px;
+}
+.register p a{
+    display: block;
+    float: right;
+    font-size: 12px;
+    color: #ff6a00;
+    margin-right: 46px;
+}
+.register p a:hover{
+    text-decoration: underline;
+} 
+.register input{
+    float: left;
+    width: 267px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #d2d2d2;
+    margin-bottom: 10px;
+}
+#username{
+    color: black
+}
+.register .inplast{
+    width: 110px;
+}
+.register img{
+    width: 90px;
+    height: 30px;
+    float: right;
+    margin-top: 5px;
+}
+.ret{
+    display: block;
+    float: right;
+    font-size: 12px;
+    color: #ff6a00;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+#register{
+    font-family: tahoma, arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', sans-serif;
+    margin-top: 20px;
+    border-radius: 4px;
+    color: #ffffff;
+    border-color: #f56600;
+    background-color: #f56600;
+    width: 304px;
+    height: 46px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+.peo,.peo1{
+    width: 37px;
+    height: 40px;
+    background-color: #eee;
+    float: left;
+    border: 1px solid #d2d2d2;
+    border-right: none;
+    vertical-align:middle;
+    text-align: center;
+}
+.peo2{
+    margin-left: 40px
+}
+.peo span{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(https://img02.hua.com/pc/assets/img/common_z.png) no-repeat;
+    background-position: -338px -318px;
+    margin-top: 10px;
+}
+.peo1 span{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url(https://img02.hua.com/pc/assets/img/common_z.png) no-repeat;
+    background-position: -312px -318px;
+    margin-top: 10px;
+}

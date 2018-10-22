@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页跳转</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        #box{
+            width: 1120px;
+            margin:20px auto;
+            box-shadow: 0 0 5px #ddd;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        #box ul:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #box ul li{
+            width: 20%;
+            box-sizing: border-box;
+            padding: 5px;
+            box-shadow: 0 0 5px #000;
+            float: left;
+        }
+        #box ul li img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">渲染页面</button>
+    <div id="box">
+        <ul id="list">
+            
+        </ul>
+    </div>
+    <script src="common.js"></script>
+    <script>
+       var data = [
+            {
+                image:"https://img13.360buyimg.com/n7/jfs/t15838/180/1978166403/84367/5de73454/5a6fe081Nd2a31f88.jpg",
+                price:"2299",
+                title:"三星(SAMSUNG) 960 PRO 512G NVMe M.2 固态硬盘 速度任你玩 新一代NVMe"
+            },
+            {
+                image:"https://img13.360buyimg.com/n7/jfs/t20164/21/2031069261/187255/896dd341/5b45ab64N52d8da5f.jpg",
+                price:"1499",
+                title:"三星（SAMSUNG） 960 PRO 512G/1TB M.2 NVMe企业级固态硬盘 SSD正品 512G"
+            },
+            {
+                image:"https://img13.360buyimg.com/n7/jfs/t18874/169/1239581703/100552/b7f002bd/5ac1a04fN59286734.jpg",
+                price:"1299",
+                title:"三星（SAMSUNG） 960 PRO 512G M.2 NVMe 固态硬盘"
+            },
+            {
+                image:"https://img11.360buyimg.com/n7/jfs/t21361/37/621476260/184539/20f9f0e2/5b135928N46fa884d.jpg",
+                price:"2189",
+                title:"三星（SAMSUNG） 960 PRO 512G M.2 NVMe 固态硬盘"
+            },
+            {
+                image:"https://img14.360buyimg.com/n7/jfs/t18070/33/370485239/81729/129166dd/5a6fe0ffN2e55502e.jpg",
+                price:"21890",
+                title:"三星（SAMSUNG） 960 PRO 512G M.2 NVMe 固态硬盘"
+            }
+        ]
+
+       btn.onclick = function(){
+            var html = "";
+            for(var i = 0 ; i < data.length ; i++){
+                // console.log(list[i]);
+                // console.log(list[i].image,list[i].title,list[i].price);
+                html += "<li>"+
+                            '<img src="'+ data[i].image +'" data-id="'+ i +'">'+
+                            '<p>'+data[i].price+'</p>'+
+                            '<a href="javascript:void(0)">'+ data[i].title + '</a>'
+                        "</li>"
+            }
+            list.innerHTML = html;
+       }
+
+       // 选中元素绑定事件;
+       var oList = document.getElementById("list");
+       // 委托;
+       
+       oList.onclick = function(evt){
+           var e = evt || window.event;
+           var img = document.querySelectorAll("#list img");
+           var imgArray = Array.from(img);
+           var target = e.target || e.srcElement;
+        //    console.log(imgArray);   
+            if(imgArray.indexOf(target) != -1){
+                // 页面跳转;
+                // 先要储存cookie;
+                cookie("goodsId",target.getAttribute("data-id"));
+                location.href = "detail.html";
+            }
+       }
+       // 跨页面的传值;
+       // cookie;
+       // location.href;
+    </script>
+</body>
+</html>
